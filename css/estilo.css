@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Itim';
+}
+
+:root {
+    --primary: #78909C;
+    --secondary: #d9d9d9;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--primary);
+    border-bottom-width: 0.5rem;
+    border-bottom-style: solid;
+    height: 5rem;
+}
+
+header img {
+    padding: 0.3rem;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--black);
+}
+
+header nav a:hover {
+    font-weight: bold;
+}
+
+main {
+    min-height: calc(100vh - 8.5rem);
+}
+
+/* Index */
+main.index section {
+    display: flex;
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+main.index section img {
+    width: 50%;
+}
+
+/* Comentário */
+main.comentario {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+    align-content: baseline;
+    padding: 0.5rem;
+}
+
+main.comentario section {
+    background-color: var(--secondary);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+main.comentario section aside {
+    display: flex;
+}
+
+main.comentario section aside p {
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+footer {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+}
+
+footer img {
+    margin: 0 0.5rem;
+}
